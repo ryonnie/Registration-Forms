@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/x-icon" href="online-registration.ico">
+    <meta charset="UTF-8">
+    <script src="controle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body class="background-shapes">
+    <fieldset>
+        <form method="post">
+            <div id="f">
+            <h1>Registration form</h1>
+            <p>
+            
+            <div class ="container">
+                <div class="form-group">
+                <label for="Full Name">Full Name</label>
+                <br><input type="text" placeholder="Enter your Name">
+            </div></div>
+
+            <div class="container">
+                <div class="form-group">
+                <label for="emailAdrsse">Email Adresse</label>
+                <br><input type="text" placeholder="Enter email">
+            </div></div>
+            <div class="container">
+                <div class="form-group">
+                <label for="pass">Password</label>
+                <br><input type="password" placeholder="Enter Password">
+            </div></div>
+            <div class="container">
+                <div class="form-group">
+                <label for="pasconf">Password Confirmation</label>
+                <br><input type="password" placeholder="Re-enter your password">
+            </div></div>
+
+            <div class= "P_B">
+                <div class="container">
+                    <div class="form-group">
+                <label for="phone Number">Phone Number</label>&emsp;
+                <br><input type="number" id="phone" placeholder="Enter Phone Number"> </div></div>
+                <br><label id="b">Birth Date</label>
+                <input type="date" class="date">
+            </div>
+            <br>
+                
+            <label class="g">Gender</label>
+            <div class="radiol">
+            <br> 
+            <input type="radio" id="male" name="gender" checked="checked">
+            <label class="r" for="male">Male</label>&emsp;
+            
+            <input type="radio" id="female" name="gender">
+            <label class="r" for="female">Female</label>&emsp;
+            
+            <input type="radio" id="prefer-not-say" name="gender">
+            <label class="r" for="prefer-not-say">Prefer not to say</label>                
+            </div>
+            </div>
+            <br>
+                <div class="container">
+                    <div class="form-group">
+                    <label>Adresse</label>
+                    <input type="text" placeholder="Enter street adresse">
+                </div></div>
+                <br>
+                <div class="dropdown">
+                    <div class="drop-select">
+                        <span class="select">Choose your Country</span>
+                        <i class="fa fa-caret-down icon"></i>
+                    </div>
+                    <div class="drop-list">
+                        <div class="drop-list__item" data-value="Tunisia">Tunisia</div>
+                        <div class="drop-list__item" data-value="Algerie">Algeria</div>
+                        <div class="drop-list__item" data-value="Palestine">Palestine</div>
+                        <div class="drop-list__item" data-value="Egypt">Egypt</div>
+                        <div class="drop-list__item" data-value="Morocco">Morocco</div>
+                        <div class="drop-list__item" data-value="France">France</div>
+                        <div class="drop-list__item" data-value="Spain">Spain</div>
+                        <div class="drop-list__item" data-value="USA">United States of America</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="form-group">
+                    <label>City</label>
+                    <input type="text" placeholder="Enter Your city">
+                </div></div>
+                
+                <div class="container">
+                    <div class="form-group">
+                    <label>Region</label>
+                    <input type="text" placeholder="Enter Your Region">
+                </div></div>
+                <div class="container">
+                    <div class="form-group">
+                    <label>Postal Code</label>
+                    <input type="number" placeholder="Enter Your postal code">
+                </div></div>
+        
+                </div>
+                <br>
+                <center>
+                <button class="btn">Submit</button></center>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
