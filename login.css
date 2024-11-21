@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("wallpaperflare.com_wallpaper\(5\).jpg");
+    backdrop-filter: blur(1px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    filter: blur(20%);
+}
+
+
+.login-container {
+    display: flex;
+    opacity: 90%;
+    filter: brightness(30px);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    width: 100%;   
+    letter-spacing: 1px;
+
+      
+   
+}
+
+
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold; 
+
+    color: #eb1736;
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+   
+}
+.form-text{
+    color: #1dbab4;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 19px;
+    border-style: outset;
+   border-color: transparent;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.form-options {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.login {
+    background: #01d2fd;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 19px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    border-color: transparent;
+    border-style: outset;
+}
+
+
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.login-box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(to right, #7b2ff7, #01d2fd);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+.login-box::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.login-box:hover::before {
+    opacity: 1;
+}
+
+.login-box:active::after {
+    background: transparent;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
